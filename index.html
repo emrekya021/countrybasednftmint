@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Minting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <img src="eth_photo.JPG" alt="Product Image" class="product-image">
+            <button id="buyButton" class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Select Your Country</h2>
+            <select id="countrySelect">
+                <option value="USA">USA ($20)</option>
+                <option value="CANADA">Canada ($25)</option>
+                <option value="UK">UK ($30)</option>
+                <option value="GERMANY">Germany ($35)</option>
+                <option value="FRANCE">France ($28)</option>
+                <option value="JAPAN">Japan ($40)</option>
+                <option value="AUSTRALIA">Australia ($45)</option>
+                <option value="BRAZIL">Brazil ($38)</option>
+                <option value="INDIA">India ($32)</option>
+                <option value="CHINA">China ($37)</option>
+            </select>
+            <p>Total Price: <span id="totalPrice">100</span> USD</p>
+            <button id="mintButton" class="mint-button">Mint NFT</button>
+            <button id="closePopup" class="close-button">Close</button>
+        </div>
+    </div>
+
+    <!-- Web3.js'i CDN üzerinden ekleyin -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
